@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,900;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;600;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;900&display=swap');
+
+@font-face {
+    font-family: 'Gotham-Black';
+    src: url(fonts/Gotham-Font/Gotham-Black.otf);
+}
+
+@font-face {
+    font-family: 'Gotham-Light';
+    src: url(fonts/Gotham-Font/Gotham-Light.otf);
+}
+
+@font-face {
+    font-family: 'Bauhaus-Bold';
+    src: url(fonts/Bauhaus-Font-Family/BauhausBold.ttf);
+}
+
+@font-face {
+    font-family: 'Bauhaus-Regular';
+    src: url(fonts/Bauhaus-Font-Family/BauhausRegular.ttf);
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+    -webkit-text-size-adjust: 100%;
+    min-height: 100vh;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    background-image: url(imgs/lance-anderson-QdAAasrZhdk-unsplash.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Bauhaus-Regular', sans-serif;
+    font-weight: 300;
+    color: #757575;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 8rem;
+    z-index: 1000;
+    overflow-x: hidden;
+}
+
+header .header-logo #logo img {
+    position: relative;
+    height: auto;
+    width: 10rem;
+    border-radius: 50%;
+    margin: 0 6rem;
+}
+
+header .header-menus {
+    position: relative;
+    right: 9rem;
+    bottom: 1rem;
+    margin-left: 10rem;
+}
+
+header .header-menus ul {
+    display: flex;
+    border: 0.5px solid #000000;
+    border-radius: 2px;
+}
+
+header .header-menus ul li {
+    padding-left: 1rem;
+    list-style: none;
+    border-left: 0.5px solid #000000;
+    border-right: 0.5px solid #000000;
+    border-radius: 2px;
+    padding: 0.1rem 5rem;
+    margin-right: px;
+
+}
+
+header .header-menus ul li a {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 100;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #272727;
+    text-decoration: none;
+}
+
+header .header-menus ul li:hover {
+    background-color: #ffffff;
+}
+
+main {
+    position: relative;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+main .to-top-button{
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    padding: 1rem;
+    border-radius: 20%;
+    z-index: 10000;
+    color: #fff;
+    font-size: 2rem;
+    background-color: rgb(53, 52, 52);
+}
+
+main .title {
+    position: absolute;
+    bottom: 15rem;
+    left: 6rem;
+}
+
+.about-section {
+    position: relative;
+    height: auto;
+    width: 100%;
+    background-color: #ffffff;
+    padding-bottom: 6rem;
+    overflow-x: hidden;
+}
+
+.st{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 6rem 0;
+}
+
+.sst{
+    position: relative;
+    left: 5rem;
+    margin: 3rem 0;
+}
+
+#h2{
+    font-size: 4rem;
+    text-decoration: underline;
+}
+
+.about-section .section-sub-title p {
+    width: 50rem;
+    font-size: 6.5rem;
+    font-family: 'Gotham-Light', sans-serif;
+    word-wrap: break-word;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.about-section .about-contents {
+    position: relative;
+    display: flex;
+    margin: 2rem 6rem;
+}
+
+.about-section .about-contents .section-about-img {
+    position: relative;
+    height: 40rem;
+    width: 50rem;
+    margin: 0rem 6rem 0rem 2rem;
+}
+
+.about-section .about-contents .section-about-img img {
+    max-height: 36rem;
+    min-width: 100%;
+    object-fit: fill;
+}
+
+.about-section .about-contents .about-text {
+    position: relative;
+    bottom: 2rem;
+    max-width: 45rem;
+    word-wrap: break-word;
+}
+
+.about-section .about-contents .about-text .svg-icon {
+    position: relative;
+    left: 8rem;
+    margin-bottom: 3rem;
+}
+
+.about-section .about-contents .about-text .svg-icon svg {
+    fill: #514d4d;
+}
+
+.about-section .about-contents .about-text p {
+    font-family: 'Open-Sans', sans-serif;
+    font-weight: 00;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: #646464;
+}
+
+.services-section {
+    position: relative;
+    top: 30rem;
+    height: fit-content;
+    width: 100%;
+    background-color: #ffffff;
+    padding-bottom: 6rem;
+    overflow-x: hidden;
+}
+
+.services-section .section-sub-title p {
+    display: flex;
+    justify-content: center;
+    font-size: 6.5rem;
+    font-family: 'Gotham-Light', sans-serif;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.services-section .services-cards {
+    position: relative;
+    display: flex;
+    margin: 8rem 3rem;
+}
+
+.services-section .services-cards .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 2.8rem 3rem;
+    height: 55rem;
+    width: 40rem;
+    border: 0.5px solid rgb(148, 146, 146);
+    box-shadow: 5px 6px 10px #8f8d8d;
+}
+
+.services-section .services-cards .card2 {
+    margin: 0 3rem;
+}
+
+.services-section .services-cards .card .card-figure {
+    margin: 4rem 0;
+}
+
+.services-section .services-cards .card .card-title {
+    margin-bottom: 2rem;
+}
+
+.services-section .services-cards .card .card-title h2{
+    font-size: 2.4rem;
+    font-family: 'Gotham-Light';
+}
+
+.services-section .services-cards .card .card-text p {
+    line-height: 2.4rem;
+    font-size: 1.5rem;
+    font-family: 'Roboto';
+}
+
+.testimonials-section {
+    position: relative;
+    top: 60rem;
+    height: max-content;
+    width: 100%;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    padding-bottom: 6rem;
+}
+
+.testimonials-section .section-sub-title p {
+    width: 50rem;
+    font-size: 6.5rem;
+    font-family: 'Gotham-Light', sans-serif;
+    word-wrap: break-word;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.testimonials-section .carousel-cards {
+    position: relative;
+    height: 85rem;
+    width: 100%;
+    margin: 5rem 2.4rem 3rem 2.4rem;
+    overflow: hidden;
+}
+
+.testimonials-section .carousel-cards .carousel-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 6rem;
+    padding-bottom: 60rem;
+    overflow-x: hidden;
+}
+
+.testimonials-section .carousel-cards .carousel-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    height: fit-content;
+    width: 75.4rem;
+    overflow: hidden;
+}
+
+.testimonials-section .carousel-cards .carousel-card .card-img {
+    height: 50rem;
+    width: 100%;
+    margin-bottom: 5.6rem;
+    overflow: hidden;
+}
+
+.testimonials-section .carousel-cards .carousel-card .card-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.testimonials-section .carousel-cards .carousel-card .card-content {
+    position: relative;
+    display: flex;
+    justify-content: baseline;
+    height: 100%;
+    width: 100%;
+}
+
+.testimonials-section .carousel-cards .carousel-card .card-content .client-photo {
+    position: relative;
+    margin-right: 3.2rem;
+    height: 11.2rem;
+    width: 11.2rem;
+}
+
+.testimonials-section .carousel-cards .carousel-card .card-content .client-photo img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 50%;
+}
+
+.testimonials-section .carousel-cards .carousel-card .card-content .card-texts {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.testimonials-section .carousel-cards .carousel-card .card-content .card-texts .card-testimonial-highlighted p {
+    font-size: 3rem;
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+.testimonials-section .carousel-cards .carousel-card .card-content .card-texts .card-testemonial-text p {
+    font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    margin: 0.8rem 0;
+}
+
+.testimonials-section .carousel-cards .carousel-card .card-content .card-texts .card-client-information {
+    position: relative;
+    left: 12.4rem;
+    width: max-content;
+    margin-top: 2.4rem;
+}
+
+.testimonials-section .carousel-cards .carousel-card .card-content .card-texts .card-client-information p {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #656565;
+}
+
+.testimonials-section .carousel-arrows {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 6.4rem;
+    width: 100%;
+    padding-right: 4.8rem;
+}
+
+.testimonials-section .carousel-arrows hr {
+    position: relative;
+    display: flex;
+    align-self: center;
+    height: 0;
+    width: 70%;
+    background-color: #a9a8a8;
+}
+
+.testimonials-section .carousel-arrows .arrow {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    height: 6.4rem;
+    width: 6.4rem;
+    cursor: pointer;
+    border: 1px solid #202020;
+}
+
+.testimonials-section .carousel-arrows .arrow:hover {
+    color: #fff;
+    background-color: #151515;
+    transition: all 400ms ease-in-out;
+}
+
+.our-projects {
+    position: relative;
+    top: 90rem;
+    height: fit-content;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 6rem;
+    margin-bottom: 3rem;
+    background-color: #fff;
+}
+
+.our-projects .section-sub-title p{
+    width: 50rem;
+    font-size: 6.5rem;
+    font-family: 'Gotham-Light', sans-serif;
+    word-wrap: break-word;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.our-projects .portfolio-container{
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    height: fit-content;
+    width: 100%;
+    padding: 3rem 2rem;
+    column-gap: 3rem;
+}
+
+.our-projects .portfolio-container .portfolio-card {
+    position: relative;
+    height: 76.4rem;
+    width: 59.3rem;
+    margin-bottom: 3rem;
+}
+
+.our-projects .portfolio-container .portfolio-card:nth-child(even) {
+    position: relative;
+    top: 16rem;
+    padding: 3rem 0;
+}
+
+.our-projects .portfolio-container .portfolio-card .card-img {
+    height: 41.5rem;
+    width: 100%;
+}
+
+.our-projects .portfolio-container .portfolio-card .card-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.our-projects .portfolio-container .portfolio-card .card-link-title {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.our-projects .portfolio-container .portfolio-card .card-link-title h2 {
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #585757;
+}
+
+.our-projects .portfolio-container .portfolio-card .card-infos {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.our-projects .portfolio-container .portfolio-card .card-infos span p {
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 3rem;
+}
+
+.our-projects .portfolio-container .portfolio-card .card-infos span p:nth-child(2) {
+    font-size: 1.8rem;
+}
+
+.contact-section{
+    position: absolute;
+    bottom: -128rem;
+    height: fit-content;
+    width: 100%;
+    padding: 6rem 8rem;
+    margin-bottom: 6rem;
+    background-color: #fff;
+}
+
+.contact-section .contacts-links{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 3rem;
+}
+
+.contact-section .contacts-links .links{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10rem;
+}
+
+.contact-section .contacts-links .links #whatsapp-link{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-section .contacts-links .links #whatsapp-link span{
+    font-size: 1.6rem;
+    font-family: 'Roboto';
+    color: #ce9607;
+}
+
+.contact-section .contacts-links .links a{
+    font-size: 3rem;
+    color: #ce9607;
+}
+
+footer{
+    position: relative;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    top: 138rem;
+    height: auto;
+    width: 100%;
+    z-index: 100;
+    padding: 4rem;
+    border-top: 1px solid rgb(115, 115, 115);
+    background-color: #fff;
+    text-align: center;
+}
+
+footer .footer-logo{
+    position: relative;
+    height: auto;
+    width: 10rem;
+}
+
+footer .footer-logo img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+footer #footer-text{
+    position: relative;
+    height: fit-content;
+    width: 100%;
+    text-align: center;
+}
+
+footer #footer-text p{
+    font-size: 2rem;
+    font-family: 'Montserrat';
+}
+
+@media (max-width: 900px) {
+    html {
+        font-size: 45%;
+    }
+  }
